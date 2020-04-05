@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="519.0" prefWidth="1127.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="taskGruz.FXMLDocumentController">
+    <children>
+        <Label layoutX="28.0" layoutY="16.0" text="Пары Ai Aj множества A" />
+        <TextArea fx:id="pairsArea" layoutX="14.0" layoutY="37.0" prefHeight="314.0" prefWidth="162.0" text="1 50:100:10:2&#10;1 200:200:15:4&#10;2 100:100:10:3&#10;4 100:100:10:3" />
+        <Button layoutX="940.0" layoutY="402.0" mnemonicParsing="false" onAction="#found" text="Найти путь" />
+        <TextField fx:id="wayField" layoutX="879.0" layoutY="434.0" prefHeight="25.0" prefWidth="240.0" />
+        <Label layoutX="836.0" layoutY="438.0" text="Путь:" />
+        <Pane fx:id="draw" layoutX="191.0" layoutY="24.0" onMouseReleased="#drawStep" prefHeight="487.0" prefWidth="636.0" style="-fx-background-color: #ffffbc;" />
+        <Button layoutX="47.0" layoutY="365.0" mnemonicParsing="false" onAction="#form" prefHeight="25.0" prefWidth="101.0" text="Создать граф" />
+      <Button layoutX="51.0" layoutY="480.0" mnemonicParsing="false" onAction="#remove" text="Очистить все" />
+      <Label layoutX="464.0" layoutY="8.0" text="Отрсовка графа:" />
+      <Label layoutX="934.0" layoutY="25.0" text="Редактор ребра:" />
+      <Label fx:id="infoLabel" layoutX="846.0" layoutY="56.0" text="Выбрано: " />
+      <Label layoutX="846.0" layoutY="83.0" text="Длина:" />
+      <Label layoutX="846.0" layoutY="111.0" text="Максимальная скорость:" />
+      <Label layoutX="846.0" layoutY="141.0" text="Стоимость проезда:" />
+      <TextField fx:id="lengthField" layoutX="1024.0" layoutY="79.0" prefHeight="25.0" prefWidth="89.0" />
+      <TextField fx:id="maxSpeedField" layoutX="1024.0" layoutY="107.0" prefHeight="25.0" prefWidth="90.0" />
+      <TextField fx:id="costField" layoutX="1025.0" layoutY="137.0" prefHeight="25.0" prefWidth="89.0" />
+      <Button layoutX="944.0" layoutY="182.0" mnemonicParsing="false" onAction="#change" text="Изменить" />
+      <TextField fx:id="aCity" layoutX="900.0" layoutY="293.0" prefHeight="25.0" prefWidth="28.0" text="1" />
+      <TextField fx:id="bCity" layoutX="994.0" layoutY="293.0" prefHeight="25.0" prefWidth="28.0" text="3" />
+      <Label layoutX="850.0" layoutY="297.0" text="Город А" />
+      <Label layoutX="942.0" layoutY="297.0" text="Город Б" />
+      <Label layoutX="850.0" layoutY="334.0" text="Макс время" />
+      <Label layoutX="843.0" layoutY="366.0" text="Макс скорость" />
+      <TextField fx:id="maxTime" layoutX="958.0" layoutY="330.0" prefHeight="25.0" prefWidth="81.0" text="10000" />
+      <TextField fx:id="maxSpeed" layoutX="958.0" layoutY="362.0" prefHeight="25.0" prefWidth="81.0" text="200" />
+      <Label fx:id="spendTimeLabel" layoutX="836.0" layoutY="472.0" text="Затраченное время:" />
+      <Label fx:id="spendCostLabel" layoutX="836.0" layoutY="497.0" text="Стоимость:" />
+      <Label fx:id="distanceLabel" layoutX="981.0" layoutY="497.0" text="Расстояние:" />
+    </children>
+</Pane>
